@@ -2,7 +2,7 @@
     --size1: 820px;
     --size2: 985px;
     --white: #ffffff;
-    --lightDark: #00000077;
+    --lightDark: rgba(0, 0, 0, 0.48);
 }
 
 * {
@@ -31,14 +31,18 @@ main {
     margin: 0 auto;
     padding: 50px;
     border-radius: 18px;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.25);
     
 }
 
 .pokemonId {
-
     font-size: 32px;
     font-weight: bold;
-    color:var(--lightDark);
+    color: var(--lightDark);
 }
 
 .pokemonName {
@@ -47,18 +51,46 @@ main {
     font-weight: bold;
 }
 
-.pokemonImage{
-
-    width: 284px;
+.tagsRow {
+    display: flex;
 }
 
-.typeTag{
-
+.typeTag {
     font-weight: medium;
     font-size: 28px;
     color: var(--white);
-    display: inline-block;
-    padding: 5px;
+    padding: 10px;
+    box-sizing: border-box;
     height: 64px;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    border-radius: 8px;
+}
+.typeTag svg{
+
+    margin-right: 5px;
+}
+
+.pokemonImage {
+    
+    position: relative;
+
+}
+
+.pokemonImage img {
+   height: 284px;
+    position: relative;
+    z-index: 1;
+    top: -64px;
+    left: 100px; /* Apagar essa linha quando o space-between funcionar*/
+}
+
+.pokeballBg {
+    
+    position: absolute;
+    top:-28px;
+    left:200px;
+    
+    
 }
