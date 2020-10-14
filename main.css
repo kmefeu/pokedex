@@ -1,0 +1,64 @@
+:root {
+    --size1: 820px;
+    --size2: 985px;
+    --white: #ffffff;
+    --lightDark: #00000077;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+.srcContainer {
+    width: var(--size2);
+    margin: 0 auto;
+}
+
+#srcPokemon {
+    width: var(--size1);
+    margin: 0 auto;
+    border: 0px;
+}
+
+.pokemonTumb {
+    width: var(--size1);
+    height: 280px;
+    background-color: #7FB781;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 18px;
+    
+}
+
+.pokemonId {
+
+    font-size: 32px;
+    font-weight: bold;
+    color:var(--lightDark);
+}
+
+.pokemonName {
+    font-size: 65px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.pokemonImage{
+
+    width: 284px;
+}
+
+.typeTag{
+
+    font-weight: medium;
+    font-size: 28px;
+    color: var(--white);
+    display: inline-block;
+    padding: 5px;
+    height: 64px;
+    align-content: center;
+}
