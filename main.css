@@ -8,6 +8,11 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
 
 main {
     width: 100%;
@@ -16,6 +21,25 @@ main {
 .srcContainer {
     width: var(--size2);
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.srcBar {
+    
+    
+    
+
+}
+.srcBar{
+
+    width: 820px;
+    height: 150px;
+    margin: 150px;
+    background-color: #F0F0F0;
+    font-size:38px ;
+    
 }
 
 #srcPoke {
@@ -89,19 +113,16 @@ main {
     left: 100px;
     top: 160px;
     z-index: 1;
-    }
+}
 
-.dots{
-
+.dots {
     position: absolute;
-    top:30px;
+    top: 30px;
     left: -120px;
 }
 
 .pokeballBg {
     position: absolute;
-    top:-27px;
-    left:199px;
-    
-    
+    top: -27px;
+    left: 199px;
 }
