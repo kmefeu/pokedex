@@ -55,14 +55,12 @@ main {
     align-items: center;
     transition: background-color 1s ease-in-out;
 }
-.pokeball-roll{
 
+.pokeball-roll {
     animation: pokeroll 1s linear infinite;
-    
-    
 }
 
-@keyframes pokeroll{
+@keyframes pokeroll {
     from {
         transform: rotate(0deg);
     }
@@ -211,4 +209,6 @@ input:hover::-webkit-input-placeholder {
     position: absolute;
     top: -27px;
     left: 199px;
+
+    /* over-flow-hidden */
 }
