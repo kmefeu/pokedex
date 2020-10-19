@@ -1,0 +1,48 @@
+.tagsRow {
+    display: flex;
+}
+
+.typeTag {
+    font-size: 28px;
+    color: var(--white);
+    padding: 10px;
+    box-sizing: border-box;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.typeTag:hover {
+    box-shadow: var(--shadow);
+    transform: scale(1.1);
+}
+
+.typeTag div {
+    width: var(--sizeTag);
+    height: var(--sizeTag);
+    margin-right: 10px;
+    background-size: 100%;
+}
+
+.grass {
+    background: url('/pokedex/assets/svg-icons-type/grass.svg') no-repeat;
+}
+
+.grassBg {
+    background-color: var(--grass);
+}
+
+.poison {
+    background: url('/pokedex/assets/svg-icons-type/poison.svg') no-repeat;
+}
+
+.poisonBg {
+    background-color: var(--poison);
+}
+
+.typeTag svg {
+    margin-right: 5px;
+}

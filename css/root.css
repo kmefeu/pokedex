@@ -1,0 +1,20 @@
+:root {
+    --size1: 820px;
+    --size2: 985px;
+    --sizeTag: 38px;
+    --shadow: 0px 20px 50px rgba(0, 0, 0, 0.25);
+    --white: #ffffff;
+    --darkWhite: #F0F0F0;
+    --lightDark: rgba(0, 0, 0, 0.48);
+    --midGray: #69696B;
+    --lightGray: #d3d3d3;
+    --red: #d80a0a;    
+    --grass: #7FB781;
+    --poison: #9D43C2;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-size: 100%;
+}

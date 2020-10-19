@@ -1,0 +1,95 @@
+.pokeTumb {
+    width: var(--size1);
+    height: 280px;
+    background-color: var(--grass);
+    margin: 0 auto 80px;
+    padding: 45px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow);
+    transition: 2s;
+
+}
+
+.pokeTumb:hover {
+    animation: move-right-tumb 5s linear infinite;
+    /* animation: move-right-tumb 0.5s ease-in-out; */
+    background-image: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.65) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%);
+}
+
+@keyframes move-right-tumb {
+    from {
+        background-position: 0 0px;
+    }
+    to {
+        background-position: 820px 0px;
+    }
+}
+
+.pokeInfo {
+    
+    width: 50%;
+    height: 100%;
+}
+
+.pokeInfo div {
+
+    display: flex;
+}
+
+.pokeId {
+    
+    font-size: 32px;
+    font-weight: bolder;
+    color: var(--lightDark);
+    
+}
+
+.pokeName {
+    font-size: 65px;
+    color: var(--white);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pokeImage {
+    
+    width: 50%;
+    height: 100%;
+}
+
+.pokeImage img {
+    height: 284px;
+    margin: -100px auto 0 40px;
+    transition: 0.6s ease-in-out;
+}
+
+.pokeImage img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.pokeShadow {
+    width: 353px;
+    height: 101px;
+    margin: -110px auto 0 40px;
+    background: url('/pokedex/assets/svg/pokeShadow.svg') no-repeat;
+}
+
+.dots {
+    width: 182px;
+    height: 50px;
+    margin-left: 80px;
+    background: url('/pokedex/assets/svg/dots.svg') no-repeat;
+}
+
+.pokeballBg {
+    
+    height: 280px;
+    width: 340px;
+    margin: -231px auto 0 70px;
+    border-radius: 18px;
+    background-image: url('/pokedex/assets/svg/pokeballBg.svg');
+    background-repeat: no-repeat;
+    background-position: center right -48px;
+}
