@@ -9,6 +9,7 @@
     align-items: center;
     box-shadow: var(--shadow);
     transition: 2s;
+    transition: transform 1s;
 
 }
 
@@ -16,6 +17,7 @@
     animation: move-right-tumb 5s linear infinite;
     /* animation: move-right-tumb 0.5s ease-in-out; */
     background-image: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.65) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%);
+    transform: scale(1.05);
 }
 
 @keyframes move-right-tumb {
@@ -79,6 +81,7 @@
 .dots {
     width: 182px;
     height: 50px;
+    margin-top: -20px;
     margin-left: 80px;
     background: url('/pokedex/assets/svg/dots.svg') no-repeat;
 }

@@ -1,0 +1,8 @@
+.invisible {
+    display: none;
+}
+
+.fadeOut {
+
+    opacity: 0%;
+}

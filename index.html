@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
 
-
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -17,7 +16,7 @@
     <link rel="stylesheet" href="/pokedex/css/srcbar.css">
     <link rel="stylesheet" href="/pokedex/css/tumb.css">
     <link rel="stylesheet" href="/pokedex/css/tag.css">
-
+    <link rel="stylesheet" href="/pokedex/css/search.css">
 
 </head>
 
@@ -26,13 +25,15 @@
         <div class="container">
             <form class="srcBar">
 
-                <div class="srcBg"></div>
+                <div class="srcBg">
+                    <div class="pokeball"></div>
+                </div>
                 <input type="text" name="srcPoke" id="srcPoke" placeholder="What Pokémon are you looking for?">
 
             </form>
         </div>
     </header>
-    
+
     <main>
         <div class="container">
 
@@ -41,7 +42,7 @@
 
                     <div class="pokeInfo">
 
-                        <div> 
+                        <div>
                             <p class="pokeId">#001</p>
                             <div class="dots"></div>
                         </div>
@@ -57,16 +58,17 @@
                             <div class="typeTag poisonBg">
                                 <div class="poison"></div>
                                 <p>Poison</p>
-                            </div> 
+                            </div>
                         </div>
 
                     </div>
 
-                    <div class="pokeImage">
+                    <div class="pokeImage" id="pk1">
 
                         <img src="/pokedex/assets/img/pk1.png" alt="Bulbasaur">
                         <div class="pokeballBg"></div>
                         <div class="pokeShadow"></div>
+                        <audio src="/pokedex/assets/audio/poke1.mp3"></audio>
 
                     </div>
 
@@ -76,7 +78,7 @@
 
                     <div class="pokeInfo">
 
-                        <div> 
+                        <div>
                             <p class="pokeId">#002</p>
                             <div class="dots"></div>
                         </div>
@@ -92,7 +94,7 @@
                             <div class="typeTag poisonBg">
                                 <div class="poison"></div>
                                 <p>Poison</p>
-                            </div> 
+                            </div>
                         </div>
 
                     </div>
@@ -111,7 +113,7 @@
 
                     <div class="pokeInfo">
 
-                        <div> 
+                        <div>
                             <p class="pokeId">#003</p>
                             <div class="dots"></div>
                         </div>
@@ -127,7 +129,7 @@
                             <div class="typeTag poisonBg">
                                 <div class="poison"></div>
                                 <p>Poison</p>
-                            </div> 
+                            </div>
                         </div>
 
                     </div>
@@ -141,17 +143,16 @@
                     </div>
 
                 </li>
-
-                
-
             </ul>
 
-
         </div>
-
     </main>
 
-    <script src="/pokedex/js/src-color.js"></script>
+    <script src="/pokedex/js/form.js"></script>
+    <script src="/pokedex/js/srcBar.js"></script>
+    <script src="/pokedex/js/search.js"></script>
+    <script src="/pokedex/js/request.js"></script>
+    <script src="/pokedex/js/add.js"></script>
 
 </body>
 

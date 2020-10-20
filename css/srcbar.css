@@ -1,5 +1,3 @@
-
-
 .srcBar {
     width: var(--size1);
     height: 150px;
@@ -16,16 +14,20 @@
     width: 123px;
     height: 150px;
     background-color: var(--midGray);
-    background-image: url('/pokedex/assets/svg/smallPokeballBg.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 65%;
     border-radius: 24px 0px 0px 24px;
-    padding: 25px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     transition: background-color 1s ease-in-out;
+}
+
+.pokeball {
+    width: 100%;
+    height: 100%;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/pokedex/assets/svg/smallPokeballBg.svg');
 }
 
 .pokeball-roll {
