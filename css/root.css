@@ -8,9 +8,48 @@
     --lightDark: rgba(0, 0, 0, 0.48);
     --midGray: #69696B;
     --lightGray: #d3d3d3;
-    --red: #d80a0a;    
-    --grass: #7FB781;
-    --poison: #9D43C2;
+    --red: #d80a0a;
+    --grass: #78C850;
+    /* --grassBg:#7FB881; */
+    /* --grassBg: #7DCF19;  */
+    /* --grassBg: #78c519; */
+    --grassBg: #72b81d;  
+    --poison: #A040A0;
+    /* --poisonBg: #703DAD; */
+    --poisonBg: #6936a8;
+    --normal: #A8A878;
+    --normalBg: #a79b6c;
+    --fighting: #C03028;
+    --fightingBg: #CC5B21;
+    --flying: #A890F0;
+    --flyingBg: #7779D9;
+    --ground:#E0C068;
+    --groundBg:#EDA861;
+    --rock: #B8A038;
+    --rockBg: #C48C31;
+    --bug: #A8B820;
+    /* --bugBg: #7DCF19; */
+    --bugBg:#7FB881; 
+    --ghost: #705898;
+    --ghostBg: #5865A6;
+    --steel: #B8B8D0;
+    --steelBg: #B8CCDE;
+    --fire: #F08030;
+    --fireBg: #F84025;
+    --water: #6890F0;
+    --waterBg: #4b93ca;;
+    --electric: #F8D030;
+    --electricBg: #FCA523;
+    --psychic: #F85888;
+    --psychicBg:#d33cb5;
+    --ice: #98D8D8;
+    --iceBg: #95BBE6;
+    --dark: #705848;
+    --darkBg: #7D4F4A;
+    --fairy: #FF65D5;
+    --fairyBg: #BD59FF;
+    --dragon: #7038F8;
+    --dragonBg: #6770E0;
 }
 
 * {

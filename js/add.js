@@ -2,7 +2,7 @@ function createPoke(id,na,t1,t2,im) {
     let ul = document.querySelector("ul");
 
     let li = document.createElement("li")
-    li.classList.add("pokeTumb");
+    li.classList.add("pokeTumb",t1+"BgTumb");
 
     let pokeInfo = document.createElement("div")
     pokeInfo.classList.add("pokeInfo");
@@ -46,7 +46,8 @@ function createPoke(id,na,t1,t2,im) {
     
     let img = document.createElement("img");
     //img.setAttribute('src',"/../pokedex/assets/img/pk1.png");
-    img.setAttribute('src',im);
+    //img.setAttribute('src',"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/"+im+".gif");
+    img.setAttribute('src',"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+im+".png");
 
     let pokeballBg = document.createElement("div");
     pokeballBg.classList.add("pokeballBg");
@@ -83,4 +84,4 @@ function createPoke(id,na,t1,t2,im) {
 
 }
 
-createPoke("001","Bulbasaur","grass","poison","/../pokedex/assets/img/pk1.png");
+//createPoke("001","Bulbasaur","grass","poison","/../pokedex/assets/img/pk1.png");
