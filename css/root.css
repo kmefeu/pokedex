@@ -13,7 +13,7 @@
     /* --grassBg:#7FB881; */
     /* --grassBg: #7DCF19;  */
     /* --grassBg: #78c519; */
-    --grassBg: #72b81d;  
+    --grassBg: #72b81d;
     --poison: #A040A0;
     /* --poisonBg: #703DAD; */
     --poisonBg: #6936a8;
@@ -23,13 +23,13 @@
     --fightingBg: #CC5B21;
     --flying: #A890F0;
     --flyingBg: #7779D9;
-    --ground:#E0C068;
-    --groundBg:#EDA861;
+    --ground: #E0C068;
+    --groundBg: #EDA861;
     --rock: #B8A038;
     --rockBg: #C48C31;
     --bug: #A8B820;
     /* --bugBg: #7DCF19; */
-    --bugBg:#7FB881; 
+    --bugBg: #7FB881;
     --ghost: #705898;
     --ghostBg: #5865A6;
     --steel: #B8B8D0;
@@ -37,11 +37,12 @@
     --fire: #F08030;
     --fireBg: #F84025;
     --water: #6890F0;
-    --waterBg: #4b93ca;;
+    --waterBg: #4b93ca;
+    ;
     --electric: #F8D030;
     --electricBg: #FCA523;
     --psychic: #F85888;
-    --psychicBg:#d33cb5;
+    --psychicBg: #d33cb5;
     --ice: #98D8D8;
     --iceBg: #95BBE6;
     --dark: #705848;
@@ -56,4 +57,8 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     background-size: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

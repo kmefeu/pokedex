@@ -30,7 +30,7 @@
     background-image: url('/pokedex/assets/svg/smallPokeballBg.svg');
 }
 
-.pokeball-roll {
+.roll {
     animation: pokeroll 1s linear infinite;
 }
 

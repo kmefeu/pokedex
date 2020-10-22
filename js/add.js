@@ -1,8 +1,9 @@
-function createPoke(id,na,t1,t2,im) {
+function addPoke(id, name, types) {
+
     let ul = document.querySelector("ul");
 
     let li = document.createElement("li")
-    li.classList.add("pokeTumb",t1+"BgTumb");
+    li.classList.add("pokeTumb", types[0].type.name + "BgTumb"); // dinamic
 
     let pokeInfo = document.createElement("div")
     pokeInfo.classList.add("pokeInfo");
@@ -11,77 +12,102 @@ function createPoke(id,na,t1,t2,im) {
 
     let pokeId = document.createElement("p");
     pokeId.classList.add("pokeId");
-    pokeId.textContent = ("#"+id);
+    pokeId.textContent = ("#" + id); // dinamic
 
     let dots = document.createElement("div")
     dots.classList.add("dots");
 
     let pokeName = document.createElement("p")
     pokeName.classList.add("pokeName");
-    pokeName.textContent = na;
+    pokeName.textContent = name; // dinamic
 
     let tagsRow = document.createElement("div")
     tagsRow.classList.add("tagsRow");
 
-    let typeTag = document.createElement("div")
-    typeTag.classList.add("typeTag",t1+"Bg");
+    types.forEach(element => {
 
-    let type = document.createElement("div")
-    type.classList.add(t1);
+        ty = element.type.name
 
-    let pType = document.createElement("p");
-    pType.textContent = t1;
+        let typeTag = document.createElement("div")
+        typeTag.classList.add("typeTag", ty + "Bg"); // dinamic
 
-    let typeTag2 = document.createElement("div");
-    typeTag2.classList.add("typeTag",t2+"Bg");
+        let type = document.createElement("div")
+        type.classList.add(ty); // dinamic
 
-    let type2 = document.createElement("div");
-    type2.classList.add(t2);
+        let pType = document.createElement("p");
+        pType.textContent = ty; // dinamic
 
-    let pType2 = document.createElement("p");
-    pType2.textContent = t2;
+        typeTag.appendChild(type);
+        typeTag.appendChild(pType);
+
+        tagsRow.appendChild(typeTag);
+
+
+    });
 
     let pokeImage = document.createElement("div")
     pokeImage.classList.add("pokeImage");
-    
+
+    let urlImg = ("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + id + ".png");// dinamic
+
+    if (id > 721 && id < 894) {
+
+        urlImg = ("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png");// dinamic
+
+    }
+
+    if (id > 10026 && id < 10033) {
+
+        urlImg = ("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png");// dinamic
+
+    }
+
+    if (id == 10061) {
+
+        urlImg = ("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png");// dinamic
+
+    }
+    if (id > 10079 && id < 10086) {
+
+        urlImg = ("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png");// dinamic
+
+    }
+    if (id > 10090 && id < 10158) {
+
+        urlImg = ("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png");// dinamic
+
+    }
+
     let img = document.createElement("img");
-    //img.setAttribute('src',"/../pokedex/assets/img/pk1.png");
-    //img.setAttribute('src',"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/"+im+".gif");
-    img.setAttribute('src',"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+im+".png");
+    img.classList.add("sprites");
+    img.setAttribute('src', urlImg);
+
+
+    let pokeShadow = document.createElement("img");
+    pokeShadow.classList.add("pokeShadow");
+    pokeShadow.setAttribute('src', urlImg);
+
 
     let pokeballBg = document.createElement("div");
     pokeballBg.classList.add("pokeballBg");
 
-    let pokeShadow = document.createElement("div");
-    pokeShadow.classList.add("pokeShadow");
+
 
     div.appendChild(pokeId);
     div.appendChild(dots);
-    
+
     pokeInfo.appendChild(div);
     pokeInfo.appendChild(pokeName);
-    
-    typeTag.appendChild(type);
-    typeTag.appendChild(pType);
-    
-    tagsRow.appendChild(typeTag);
-    
-    typeTag2.appendChild(type2);
-    typeTag2.appendChild(pType2);
-    
-    tagsRow.appendChild(typeTag2);
-    
+
     pokeInfo.appendChild(tagsRow);
-    
+
     pokeImage.appendChild(img);
     pokeImage.appendChild(pokeballBg);
     pokeImage.appendChild(pokeShadow);
-    
+
     li.appendChild(pokeInfo);
     li.appendChild(pokeImage);
-    
+
     ul.appendChild(li);
 
 }
-
-//createPoke("001","Bulbasaur","grass","poison","/../pokedex/assets/img/pk1.png");
