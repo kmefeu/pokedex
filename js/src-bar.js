@@ -23,16 +23,6 @@ input.onkeydown = (event) => {
 }
 
 
-// document.querySelector("#pk1").addEventListener("mouseover", function () {
 
-//     let audio = document.querySelector('audio')
-//     audio.currentTime = 0;
-//     audio.play();
-//     setTimeout(function () {
-//         audio.pause();
-//     }, 1500);
-
-
-// })
 
 
