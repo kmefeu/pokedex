@@ -20,11 +20,9 @@ async function detectPokes() {
 
 // adiciona 10 pokes iniciais
 
-function initialLoad() {
-
-    
+async function initialLoad() {
     for (let i = 0; i < 10; i++) {
-         pokeInfo(detectedPokes[i].url)
+        await pokeInfo(detectedPokes[i].url)
     }
 
 }
@@ -38,12 +36,13 @@ async function pokeInfo(pokeToLoad) {
         .then(response => {
             return response.json()
         }).then(data => {
+            console.log(data)
             return caughtPokes = [...caughtPokes, data];
         })
 
 }
 
-function loadPoke() {
+ function loadPoke() {
 
 
     console.log("entrei aqui no load");
@@ -58,9 +57,10 @@ function loadPoke() {
     document.querySelector(".pokeball").classList.remove("roll")
     document.querySelector("#srcPoke").value = "";
 
-    
 }
 
 
-detectPokes().then(() => initialLoad()).then(() => loadPoke())
+detectPokes().then(async () => await initialLoad()).then(() => loadPoke())
+
+
 
