@@ -1,8 +1,9 @@
 .srcBar {
     width: var(--size1);
     height: 150px;
-    margin: 120px auto;
-    position: relative;
+    margin-top: 120px;
+    position: fixed;
+    z-index: 2;
 }
 
 .srcBar input:focus .srcBg {

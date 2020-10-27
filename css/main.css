@@ -2,11 +2,17 @@ main, header {
     width: 100%;
 }
 
+main{
+
+margin-top: 350px;
+
+}
 
 .container {
     width: var(--size2);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }

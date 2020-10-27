@@ -2,10 +2,14 @@
 var detectedPokes = [];
 var caughtPokes = [];
 
+var indicator = 0;
+var iniLoad = 10;
+var morLoad = 10;
+
 // detecta o nome de todos os pokemons e suas urls
 
 async function detectPokes() {
-    return await fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=50")
+    return await fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=1050")
         .then(response => {
             return response.json()
         })
@@ -20,10 +24,20 @@ async function detectPokes() {
 // adiciona 10 pokes iniciais
 
 async function initialLoad() {
-    for (let i = 0; i < 10; i++) {
-        await pokeInfo(detectedPokes[i].url)
+    for (indicator = 0; indicator < iniLoad; indicator++) {
+        await pokeInfo(detectedPokes[indicator].url)
     }
+}
 
+// loadmore pokemons
+
+async function loadMore() {
+   
+    let target = indicator + morLoad;
+    
+   for (indicator; indicator < target ; indicator++) {
+        await pokeInfo(detectedPokes[indicator].url)
+    }
 }
 
 
@@ -41,21 +55,19 @@ async function pokeInfo(pokeToLoad) {
 
 }
 
- function loadPoke() {
+function loadPoke() {
 
+    let loadBase
 
-    console.log("entrei aqui no load");
-    console.log(caughtPokes.length);
+    if (indicator == iniLoad) { loadBase = (caughtPokes.length - iniLoad) }
+    else { loadBase = caughtPokes.length - morLoad }
 
-    for (let i = 0; i < caughtPokes.length; i++) {
+    for (loadBase; loadBase < caughtPokes.length; loadBase++) {
 
-        console.log("entrei aqui no for");
-
-        addPoke(caughtPokes[i].id, caughtPokes[i].name, caughtPokes[i].types);
+        addPoke(caughtPokes[loadBase].id, caughtPokes[loadBase].name, caughtPokes[loadBase].types);
     };
     document.querySelector(".pokeball").classList.remove("roll")
     document.querySelector("#srcPoke").value = "";
-
 }
 
 
