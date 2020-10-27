@@ -4,7 +4,7 @@
 var urlGet = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=10";
 var caughtPokes = [];
 
-function getPoke(url) {
+function detectPokes(url) {
     return fetch(url)
         .then(response => {
             return response.json()
@@ -26,7 +26,7 @@ function getPoke(url) {
 function loadPoke() {
 
 
-    getPoke(urlGet).then(data => {
+    detectPokes(urlGet).then(data => {
 
         caughtPokes = [...caughtPokes, ...data];
         console.log(data);
@@ -48,4 +48,9 @@ function loadPoke() {
 
 
 loadPoke();
+
+function loadStart(){
+
+    // faz a function add  adicionar 10 pokes
+}
 
