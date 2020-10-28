@@ -14,9 +14,9 @@ async function detectPokes() {
             return response.json()
         })
         .then(data => {
-            console.log(data)
+           // console.log(data)
             detectedPokes = data.results;
-            console.log(detectedPokes)
+           // console.log(detectedPokes)
             return detectedPokes; // precisa do return ?
         })
 };
@@ -49,7 +49,7 @@ async function pokeInfo(pokeToLoad) {
         .then(response => {
             return response.json()
         }).then(data => {
-            console.log(data)
+           // console.log(data)
             return caughtPokes = [...caughtPokes, data];
         })
 
@@ -72,6 +72,3 @@ function loadPoke() {
 
 
 detectPokes().then(async () => await initialLoad()).then(() => loadPoke())
-
-
-
