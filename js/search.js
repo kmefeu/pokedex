@@ -2,17 +2,8 @@ var srcPoke = document.querySelector("#srcPoke");
 
 srcPoke.addEventListener("input", function () {
 
-    // Clean all existing preview
-
-    let preview = document.querySelectorAll(".srcPreview")
-
-    for (let i = 0; i < preview.length; i++) {
-
-        console.log("Removeu Previu")
-        preview[i].remove();
-
-    }
-
+    cleanPreview();
+    
     var pokemons = document.querySelectorAll(".pokeTumb");
 
     if (this.value.length > 0) {

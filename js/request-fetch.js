@@ -72,3 +72,5 @@ function loadPoke() {
 
 
 detectPokes().then(async () => await initialLoad()).then(() => loadPoke())
+
+

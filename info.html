@@ -10,19 +10,719 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/pokedex/css/reset.css">
-    <link rel="stylesheet" href="/pokedex/css/root.css">
-    <link rel="stylesheet" href="/pokedex/css/main.css">
-    <link rel="stylesheet" href="/pokedex/css/srcbar.css">
-    <link rel="stylesheet" href="/pokedex/css/tumb.css">
-    <link rel="stylesheet" href="/pokedex/css/tag.css">
-    <link rel="stylesheet" href="/pokedex/css/search.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/srcbar.css">
+    <link rel="stylesheet" href="css/tumb.css">
+    <link rel="stylesheet" href="css/tag.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/info.css">
 
 </head>
 
 <body>
     <main>
+        <ul id="infinite-list">
 
+            <li class="pokeTumb grassBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#1</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">bulbasaur</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag grassBg">
+                            <div class="grass"></div>
+                            <p>grass</p>
+                        </div>
+                        <div class="typeTag poisonBg">
+                            <div class="poison"></div>
+                            <p>poison</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
+
+                </div>
+                <div class="specContainer">
+                    <p class="textFlaivor">
+                        Bullbasaur can be seen napping in bright sunlight. There is a seed on its back. By soakign
+                        up the sun’s rays, the seed grows progressively larger.
+                    </p>
+                    <div class="line"></div>
+                    <ul class="spec">
+                        <li><b>species:</b>Seed Pokémon</li>
+                        <li><b>height:</b>0.7m(2"04")</li>
+                        <li><b>weight:</b>6.9kg(15.lbs)</li>
+                        <li><b>abilities:</b>1. Overgrow</li>
+
+                        <li><b>weaknesses:</b></li>
+                    </ul>
+                    <div class="tagsRow">
+                        <div class="typeTag fireBg">
+                            <div class="fire"></div>
+                            <p>fire</p>
+                        </div>
+                        <div class="typeTag flyingBg">
+                            <div class="flying"></div>
+                            <p>flying</p>
+                        </div>
+                        <div class="typeTag iceBg">
+                            <div class="ice"></div>
+                            <p>ice</p>
+                        </div>
+                        <div class="typeTag psychicBg">
+                            <div class="psychic"></div>
+                            <p>psychic</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </li>
+
+            <!-- <li class="pokeTumb grassBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#2</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">ivysaur</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag grassBg">
+                            <div class="grass"></div>
+                            <p>grass</p>
+                        </div>
+                        <div class="typeTag poisonBg">
+                            <div class="poison"></div>
+                            <p>poison</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb grassBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#3</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">venusaur</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag grassBg">
+                            <div class="grass"></div>
+                            <p>grass</p>
+                        </div>
+                        <div class="typeTag poisonBg">
+                            <div class="poison"></div>
+                            <p>poison</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb fireBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#4</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">charmander</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag fireBg">
+                            <div class="fire"></div>
+                            <p>fire</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb fireBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#5</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">charmeleon</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag fireBg">
+                            <div class="fire"></div>
+                            <p>fire</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb fireBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#6</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">charizard</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag fireBg">
+                            <div class="fire"></div>
+                            <p>fire</p>
+                        </div>
+                        <div class="typeTag flyingBg">
+                            <div class="flying"></div>
+                            <p>flying</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb waterBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#7</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">squirtle</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag waterBg">
+                            <div class="water"></div>
+                            <p>water</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb waterBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#8</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">wartortle</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag waterBg">
+                            <div class="water"></div>
+                            <p>water</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb waterBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#9</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">blastoise</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag waterBg">
+                            <div class="water"></div>
+                            <p>water</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb bugBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#10</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">caterpie</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag bugBg">
+                            <div class="bug"></div>
+                            <p>bug</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb bugBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#11</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">metapod</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag bugBg">
+                            <div class="bug"></div>
+                            <p>bug</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb bugBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#12</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">butterfree</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag bugBg">
+                            <div class="bug"></div>
+                            <p>bug</p>
+                        </div>
+                        <div class="typeTag flyingBg">
+                            <div class="flying"></div>
+                            <p>flying</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb bugBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#13</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">weedle</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag bugBg">
+                            <div class="bug"></div>
+                            <p>bug</p>
+                        </div>
+                        <div class="typeTag poisonBg">
+                            <div class="poison"></div>
+                            <p>poison</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb bugBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#14</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">kakuna</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag bugBg">
+                            <div class="bug"></div>
+                            <p>bug</p>
+                        </div>
+                        <div class="typeTag poisonBg">
+                            <div class="poison"></div>
+                            <p>poison</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb bugBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#15</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">beedrill</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag bugBg">
+                            <div class="bug"></div>
+                            <p>bug</p>
+                        </div>
+                        <div class="typeTag poisonBg">
+                            <div class="poison"></div>
+                            <p>poison</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb normalBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#16</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">pidgey</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag normalBg">
+                            <div class="normal"></div>
+                            <p>normal</p>
+                        </div>
+                        <div class="typeTag flyingBg">
+                            <div class="flying"></div>
+                            <p>flying</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb normalBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#17</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">pidgeotto</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag normalBg">
+                            <div class="normal"></div>
+                            <p>normal</p>
+                        </div>
+                        <div class="typeTag flyingBg">
+                            <div class="flying"></div>
+                            <p>flying</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb normalBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#18</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">pidgeot</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag normalBg">
+                            <div class="normal"></div>
+                            <p>normal</p>
+                        </div>
+                        <div class="typeTag flyingBg">
+                            <div class="flying"></div>
+                            <p>flying</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb normalBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#19</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">rattata</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag normalBg">
+                            <div class="normal"></div>
+                            <p>normal</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png">
+
+                </div>
+            </li>
+
+            <li class="pokeTumb normalBgTumb">
+                <div class="pokeInfo">
+
+                    <div>
+                        <p class="pokeId">#20</p>
+                        <div class="dots"></div>
+                    </div>
+
+                    <p class="pokeName">raticate</p>
+
+                    <div class="tagsRow">
+
+                        <div class="typeTag normalBg">
+                            <div class="normal"></div>
+                            <p>normal</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pokeImage">
+
+                    <img class="sprites"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png">
+                    <div class="pokeballBg"></div>
+                    <img class="pokeShadow"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png">
+
+                </div>
+            </li> -->
+        </ul>
     </main>
 </body>
 

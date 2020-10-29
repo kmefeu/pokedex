@@ -57,8 +57,10 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     background-size: 100%;
+    pointer-events: none;
 }
 
 ::-webkit-scrollbar {
+    
     display: none;
 }
