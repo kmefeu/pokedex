@@ -2,7 +2,7 @@ window.onscroll = function () {
 
   async function paratudo() {
 
-      if ((window.innerHeight + window.scrollY + 1) >= document.body.offsetHeight) {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
       console.log("entrou")
 
      await loadMore().then(async () => await loadPoke());

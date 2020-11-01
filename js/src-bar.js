@@ -114,26 +114,22 @@ var preview = document.querySelector(".preview");
 
 preview.addEventListener("click", function (event) {
 
-    //console.log(preview)
-    //console.log(event.target.parentNode)
-    var biscoito = event.target.parentNode
+    console.log(event.target.parentNode.textContent.trim())
 
-    console.log(biscoito.value)
+    let url = ("https://pokeapi.co/api/v2/pokemon/"+ event.target.parentNode.textContent.trim())
 
-    console.log(event.target.parentNode.value)
+    document.querySelector(".pokeball").classList.add("roll")
 
-    // document.querySelector(".pokeball").classList.add("roll")
+    async function timeHolder() {
 
-    // async function timeHolder() {
+        let src = await pokeInfoSolo(url)
+        await addPokeSolo(src.id, src.name, src.types)
 
-    //     let src = await pokeInfoSolo("https://pokeapi.co/api/v2/pokemon/" + input.value)
-    //     await addPokeSolo(src.id, src.name, src.types)
+    }
 
-    // }
-
-    // timeHolder()
-    // cleanPreview();
-    // setTimeout(()=>{document.querySelector(".pokeball").classList.remove("roll") }, 650);     
+    timeHolder()
+    cleanPreview();
+    setTimeout(() => { document.querySelector(".pokeball").classList.remove("roll") }, 650);
 
 
 });

@@ -14,7 +14,7 @@ async function detectPokes() {
             return response.json()
         })
         .then(data => {
-           // console.log(data)
+           //console.log(data)
             detectedPokes = data.results;
            // console.log(detectedPokes)
             return detectedPokes; // precisa do return ?
