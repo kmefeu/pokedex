@@ -1,0 +1,71 @@
+.grassBgTumb {
+    background-color: var(--grassBg);
+}
+
+.poisonBgTumb {
+    background-color: var(--poisonBg);
+}
+
+.fireBgTumb {
+    background-color: var(--fireBg);
+}
+
+.flyingBgTumb {
+    background-color: var(--flyingBg);
+}
+
+.ghostBgTumb {
+    background-color: var(--ghostBg);
+}
+
+.groundBgTumb {
+    background-color: var(--groundBg);
+}
+
+.iceBgTumb {
+    background-color: var(--iceBg);
+}
+
+.normalBgTumb {
+    background-color: var(--normalBg);
+}
+
+.psychicBgTumb {
+    background-color: var(--psychicBg);
+}
+
+.rockBgTumb {
+    background-color: var(--rockBg);
+}
+
+.steelBgTumb {
+    background-color: var(--steelBg);
+}
+
+.waterBgTumb {
+    background-color: var(--waterBg);
+}
+
+.bugBgTumb {
+    background-color: var(--bugBg);
+}
+
+.darkBgTumb {
+    background-color: var(--darkBg);
+}
+
+.dragonBgTumb {
+    background-color: var(--dragonBg);
+}
+
+.fairyBgTumb {
+    background-color: var(--fairyBg);
+}
+
+.fightingBgTumb {
+    background-color: var(--fightingBg);
+}
+
+.electricBgTumb {
+    background-color: var(--electricBg);
+}

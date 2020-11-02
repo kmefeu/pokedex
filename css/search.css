@@ -2,10 +2,6 @@
     display: none;
 }
 
-.fadeOut {
-    opacity: 0%;
-}
-
 .srcPreview {
     font-family: 'Roboto', sans-serif;
     margin-left: 123px;
@@ -30,24 +26,12 @@
     margin: auto 0 auto 0px;
 }
 
-.hach {
-
-}
-.idPreview{
-
-    
-}
-.namePreview{
-
-    
-}
-
 .srcPreview:hover {
     color: var(--white);
     background-color: var(--midGray);
 }
 
 .preview {
-    max-height: 500px;
+    max-height: 560px;
     overflow-y: scroll;
 }

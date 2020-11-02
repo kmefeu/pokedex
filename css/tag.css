@@ -3,11 +3,11 @@
 }
 
 .typeTag {
-    font-size: 28px;
+    font-size: 22px;
     color: var(--white);
     padding: 10px;
     box-sizing: border-box;
-    height: 64px;
+    height: 52px;
     display: flex;
     align-items: center;
     margin: 4px;
@@ -30,142 +30,4 @@
 
 .typeTag svg {
     margin-right: 5px;
-}
-
-.grass {
-    background: url('/pokedex/assets/svg-icons-type/grass.svg') no-repeat;
-}
-
-.grassBg {
-    background-color: var(--grass);
-}
-
-.poison {
-    background: url('/pokedex/assets/svg-icons-type/poison.svg') no-repeat;
-}
-
-.poisonBg {
-    background-color: var(--poison);
-}
-
-.fire {
-    background: url('/pokedex/assets/svg-icons-type/fire.svg') no-repeat;
-}
-
-.fireBg {
-    background-color: var(--fire);
-}
-
-.flying {
-    background: url('/pokedex/assets/svg-icons-type/flying.svg') no-repeat;
-}
-
-.flyingBg {
-    background-color: var(--flying);
-}
-
-.ghost {
-    background: url('/pokedex/assets/svg-icons-type/ghost.svg') no-repeat;
-}
-
-.ghostBg {
-    background-color: var(--ghost);
-}
-
-.ground {
-    background: url('/pokedex/assets/svg-icons-type/ground.svg') no-repeat;
-}
-
-.groundBg {
-    background-color: var(--ground);
-}
-
-.ice {
-    background: url('/pokedex/assets/svg-icons-type/ice.svg') no-repeat;
-}
-
-.iceBg {
-    background-color: var(--ice);
-}
-
-.normal {
-    background: url('/pokedex/assets/svg-icons-type/normal.svg') no-repeat;
-}
-
-.normalBg {
-    background-color: var(--normal);
-}
-
-.psychic {
-    background: url('/pokedex/assets/svg-icons-type/psychic.svg') no-repeat;
-}
-
-.psychicBg {
-    background-color: var(--psychic);
-}
-
-.rock {
-    background: url('/pokedex/assets/svg-icons-type/rock.svg') no-repeat;
-}
-
-.rockBg {
-    background-color: var(--rock);
-}
-
-.steel {
-    background: url('/pokedex/assets/svg-icons-type/steel.svg') no-repeat;
-}
-
-.steelBg {
-    background-color: var(--steel);
-}
-
-.water {
-    background: url('/pokedex/assets/svg-icons-type/water.svg') no-repeat;
-}
-
-.waterBg {
-    background-color: var(--water);
-}
-.bug {
-    background: url('/pokedex/assets/svg-icons-type/bug.svg') no-repeat;
-}
-
-.bugBg {
-    background-color: var(--bug);
-}
-.dark {
-    background: url('/pokedex/assets/svg-icons-type/dark.svg') no-repeat;
-}
-
-.darkBg {
-    background-color: var(--dark);
-}
-.dragon {
-    background: url('/pokedex/assets/svg-icons-type/dragon.svg') no-repeat;
-}
-
-.dragonBg {
-    background-color: var(--dragon);
-}
-.fairy {
-    background: url('/pokedex/assets/svg-icons-type/fairy.svg') no-repeat;
-}
-
-.fairyBg {
-    background-color: var(--fairy);
-}
-.fighting {
-    background: url('/pokedex/assets/svg-icons-type/fighting.svg') no-repeat;
-}
-
-.fightingBg {
-    background-color: var(--fighting);
-}
-.electric {
-    background: url('/pokedex/assets/svg-icons-type/electric.svg') no-repeat;
-}
-
-.electricBg {
-    background-color: var(--electric);
 }

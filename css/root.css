@@ -1,7 +1,7 @@
 :root {
-    --size1: 820px;
+    --size1: 660px;
     --size2: 985px;
-    --sizeTag: 38px;
+    --sizeTag: 28px;
     --shadow: 0px 20px 50px rgba(0, 0, 0, 0.25);
     --white: #ffffff;
     --darkWhite: #F0F0F0;
@@ -10,12 +10,8 @@
     --lightGray: #d3d3d3;
     --red: #d80a0a;
     --grass: #78C850;
-    /* --grassBg:#7FB881; */
-    /* --grassBg: #7DCF19;  */
-    /* --grassBg: #78c519; */
     --grassBg: #72b81d;
     --poison: #A040A0;
-    /* --poisonBg: #703DAD; */
     --poisonBg: #6936a8;
     --normal: #A8A878;
     --normalBg: #a79b6c;
@@ -28,7 +24,6 @@
     --rock: #B8A038;
     --rockBg: #C48C31;
     --bug: #A8B820;
-    /* --bugBg: #7DCF19; */
     --bugBg: #7FB881;
     --ghost: #705898;
     --ghostBg: #5865A6;
@@ -38,7 +33,6 @@
     --fireBg: #F84025;
     --water: #6890F0;
     --waterBg: #4b93ca;
-    ;
     --electric: #F8D030;
     --electricBg: #FCA523;
     --psychic: #F85888;
@@ -57,7 +51,6 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     background-size: 100%;
-    /* pointer-events: none; */
 }
 
 ::-webkit-scrollbar {

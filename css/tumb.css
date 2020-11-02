@@ -1,8 +1,8 @@
 .pokeTumb {
     width: var(--size1);
-    height: 280px;
+    height: 240px;
     background-color: var(--grassBg);
-    margin: 0 auto 80px;
+    margin: 0 auto 45px;
     padding: 45px;
     border-radius: 18px;
     display: flex;
@@ -10,13 +10,13 @@
     box-shadow: var(--shadow);
     transition: 2s;
     transition: transform 1s;
-    pointer-events:all;
+    pointer-events: all;
 }
 
 .pokeTumb:hover {
     animation: move-right-tumb 5s linear infinite;
     /* animation: move-right-tumb 0.5s ease-in-out; */
-    background-image: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.65) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%);
+    background-image: linear-gradient(45deg, transparent 45%, rgba(255, 255, 255, 0.65) 45%, rgba(255, 255, 255, 0.1) 70%, transparent 70%);
     transform: scale(1.05);
 }
 
@@ -25,7 +25,7 @@
         background-position: 0 0px;
     }
     to {
-        background-position: 820px 0px;
+        background-position: var(--size1) 0px;
     }
 }
 
@@ -39,13 +39,13 @@
 }
 
 .pokeId {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: bolder;
     color: var(--lightDark);
 }
 
 .pokeName {
-    font-size: 65px;
+    font-size: 58px;
     color: var(--white);
     font-weight: bold;
     margin-bottom: 10px;
@@ -58,111 +58,45 @@
 }
 
 .sprites {
-    height: 284px;
-    margin: -100px auto 0 40px;
+    height: 264px;
+    margin: -80px auto 0 25px;
     transition: 0.6s ease-in-out;
     position: relative;
     z-index: 1;
 }
 
-.sprites:hover {
-    transform: scale(1.1) rotate(5deg);
+.pokeTumb:hover .sprites {
+    transform: scale(1.08) rotate(5deg);
 }
 
 .pokeShadow {
-    width: 300px;
-    height: 50px;
-    margin: -110px auto 0 40px;
-    filter:  blur(5px) brightness(0%) opacity(60%);
-    transform: skew(-50deg) translate(-55px,-80px);
-    
+    width: 270px;
+    height: 40px;
+    margin: 10px auto 0 20px;
+    filter: blur(5px) brightness(0%) opacity(60%);
+    transform: skew(-50deg) translate(-55px, -80px);
+    transition: 0.6s ease-in-out;
 }
+
+.pokeTumb:hover .pokeShadow {
+    opacity: 0.85;
+}
+
 .dots {
     width: 182px;
     height: 50px;
     margin-top: -20px;
-    margin-left: 80px;
+    margin-left: 50px;
     background: url('/pokedex/assets/svg/dots.svg') no-repeat;
 }
 
 .pokeballBg {
-    height: 280px;
+    height: 240px;
     width: 340px;
-    margin: -232px auto 0 70px;
+    margin: -231px auto 0 -10px;
     border-radius: 18px;
+    background-size:80% ;
     background-image: url('/pokedex/assets/svg/pokeballBg.svg');
     background-repeat: no-repeat;
-    background-position: center right -48px;
-}
-
-.grassBgTumb {
-    background-color: var(--grassBg);
-}
-
-.poisonBgTumb {
-    background-color: var(--poisonBg);
-}
-
-.fireBgTumb {
-    background-color: var(--fireBg);
-}
-
-.flyingBgTumb {
-    background-color: var(--flyingBg);
-}
-
-.ghostBgTumb {
-    background-color: var(--ghostBg);
-}
-
-.groundBgTumb {
-    background-color: var(--groundBg);
-}
-
-.iceBgTumb {
-    background-color: var(--iceBg);
-}
-
-.normalBgTumb {
-    background-color: var(--normalBg);
-}
-
-.psychicBgTumb {
-    background-color: var(--psychicBg);
-}
-
-.rockBgTumb {
-    background-color: var(--rockBg);
-}
-
-.steelBgTumb {
-    background-color: var(--steelBg);
-}
-
-.waterBgTumb {
-    background-color: var(--waterBg);
-}
-
-.bugBgTumb {
-    background-color: var(--bugBg);
-}
-
-.darkBgTumb {
-    background-color: var(--darkBg);
-}
-
-.dragonBgTumb {
-    background-color: var(--dragonBg);
-}
-
-.fairyBgTumb {
-    background-color: var(--fairyBg);
-}
-
-.fightingBgTumb {
-    background-color: var(--fightingBg);
-}
-
-.electricBgTumb {
-    background-color: var(--electricBg);
+    background-position: center right -40px;
 }
