@@ -6,7 +6,7 @@ var indicator = 0;
 var iniLoad = 10;
 var morLoad = 10;
 
-// detecta o nome de todos os pokemons e suas urls
+// ASK ALL POKEMONS NAME AND URL FOR DETAILS
 
 async function detectPokes() {
     return await fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=1050")
@@ -21,7 +21,7 @@ async function detectPokes() {
         })
 };
 
-// adiciona 10 pokes iniciais
+// ASK INITIAL POKEMONS DETAILS 
 
 async function initialLoad() {
     for (indicator = 0; indicator < iniLoad; indicator++) {
@@ -29,7 +29,7 @@ async function initialLoad() {
     }
 }
 
-// loadmore pokemons
+// ASK MORE POKEMONS DETAILS FOR INFINITE SCROLL
 
 async function loadMore() {
    
@@ -40,29 +40,30 @@ async function loadMore() {
     }
 }
 
+//GET POKEMON DETAILS AND STORE IN CAUGHT POKES
 
-//pega as informaçoes nessesárias para poder montar as tumbs solicitadas
+async function pokeInfo(pokeToLoadUrl) {
 
-async function pokeInfo(pokeToLoad) {
-
-    return await fetch(pokeToLoad)
+    return await fetch(pokeToLoadUrl)
         .then(response => {
             return response.json()
         }).then(data => {
-           // console.log(data)
             return caughtPokes = [...caughtPokes, data];
         })
 
 }
 
+
+// ASK TO addPoke() TO RENDER ON SCREAM CAUGHTPOKES 
+
 function loadPoke() {
 
     let loadBase
 
-    if (indicator == iniLoad) { loadBase = (caughtPokes.length - iniLoad) }
-    else { loadBase = caughtPokes.length - morLoad }
+    if (indicator != iniLoad){ loadBase = indicator - morLoad } 
+    else { loadBase = indicator - iniLoad }
 
-    for (loadBase; loadBase < caughtPokes.length; loadBase++) {
+    for (loadBase; loadBase < indicator; loadBase++) {
 
         addPoke(caughtPokes[loadBase].id, caughtPokes[loadBase].name, caughtPokes[loadBase].types);
     };
@@ -70,6 +71,8 @@ function loadPoke() {
     document.querySelector("#srcPoke").value = "";
 }
 
+
+// INITIAL LOAD AND RENDER FUNCTION CHAIN
 
 detectPokes().then(async () => await initialLoad()).then(() => loadPoke())
 

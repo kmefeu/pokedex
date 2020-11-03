@@ -1,14 +1,18 @@
-body{
-
+body {
     background-color: var(--darkWhite);
 }
-
 
 main, header {
     width: 100%;
 }
 
-
+header div {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 main {
     margin-top: 150px;
@@ -17,14 +21,10 @@ main {
 .container {
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
-ul{
-
+ul {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

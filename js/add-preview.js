@@ -1,15 +1,9 @@
-function addSrcPreview(i, name) {
-
-
-    let div = document.createElement("div");
+function addSrcPreview(name) {
 
     let previewHtml = ` 
    <div class="srcPreview">
-   <p class="namePreview">${name}</p>
-   </div>`
-
-    div.innerHTML = previewHtml
-
-    document.querySelector(".preview").appendChild(div);
-
+   <p>${name}</p>
+   </div>
+   `
+   document.querySelector(".preview").insertAdjacentHTML("beforeend", previewHtml);
 }

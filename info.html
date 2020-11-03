@@ -15,86 +15,96 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/srcbar.css">
     <link rel="stylesheet" href="css/tumb.css">
+    <link rel="stylesheet" href="css/tumb-color.css">
     <link rel="stylesheet" href="css/tag.css">
-    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/tag-color.css">
+    <link rel="stylesheet" href="css/preview.css">
     <link rel="stylesheet" href="css/info.css">
 
 </head>
-
 <body>
     <main>
-        <ul id="infinite-list">
+        <div class="pokeTumb grassBgTumb">
+            <div class="pokeInfo">
 
-            <li class="pokeTumb grassBgTumb">
-                <div class="pokeInfo">
-
-                    <div>
-                        <p class="pokeId">#1</p>
-                        <div class="dots"></div>
-                    </div>
-
-                    <p class="pokeName">bulbasaur</p>
-
-                    <div class="tagsRow">
-
-                        <div class="typeTag grassBg">
-                            <div class="grass"></div>
-                            <p>grass</p>
-                        </div>
-                        <div class="typeTag poisonBg">
-                            <div class="poison"></div>
-                            <p>poison</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pokeImage">
-
-                    <img class="sprites"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
-                    <div class="pokeballBg"></div>
-                    <img class="pokeShadow"
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
-
-                </div>
-                <div class="specContainer">
-                    <p class="textFlaivor">
-                        Bullbasaur can be seen napping in bright sunlight. There is a seed on its back. By soakign
-                        up the sun’s rays, the seed grows progressively larger.
-                    </p>
-                    <div class="line"></div>
-                    <ul class="spec">
-                        <li><b>species:</b>Seed Pokémon</li>
-                        <li><b>height:</b>0.7m(2"04")</li>
-                        <li><b>weight:</b>6.9kg(15.lbs)</li>
-                        <li><b>abilities:</b>1. Overgrow</li>
-
-                        <li><b>weaknesses:</b></li>
-                    </ul>
-                    <div class="tagsRow">
-                        <div class="typeTag fireBg">
-                            <div class="fire"></div>
-                            <p>fire</p>
-                        </div>
-                        <div class="typeTag flyingBg">
-                            <div class="flying"></div>
-                            <p>flying</p>
-                        </div>
-                        <div class="typeTag iceBg">
-                            <div class="ice"></div>
-                            <p>ice</p>
-                        </div>
-                        <div class="typeTag psychicBg">
-                            <div class="psychic"></div>
-                            <p>psychic</p>
-                        </div>
-                    </div>
-
-
+                <div>
+                    <p class="pokeId">#1</p>
+                    <div class="dots"></div>
                 </div>
 
-            </li>
-        </ul>
+                <p class="pokeName">bulbasaur</p>
+
+                <div class="tagsRow">
+
+                    <div class="typeTag grassBg">
+                        <div class="grass"></div>
+                        <p>grass</p>
+                    </div>
+                    <div class="typeTag poisonBg">
+                        <div class="poison"></div>
+                        <p>poison</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pokeImage">
+
+                <img class="sprites"
+                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
+                <div class="pokeballBg"></div>
+                <img class="pokeShadow"
+                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
+
+            </div>
+
+        </div>
+        <div class="specContainer">
+            <p class="textFlaivor">
+                Bullbasaur can be seen napping in bright sunlight. There is a seed on its back. By soakign
+                up the sun’s rays, the seed grows progressively larger.
+            </p>
+            <div class="line"></div>
+            <ul class="spec">
+                <li><b>species:</b>Seed Pokémon</li>
+                <li><b>height:</b>0.7m(2"04")</li>
+                <li><b>weight:</b>6.9kg(15.lbs)</li>
+                <li><b>abilities:</b>1. Overgrow</li>
+
+                <li><b>weaknesses:</b></li>
+            </ul>
+            <div class="tagsRow">
+                <div class="typeTag fireBg">
+                    <div class="fire"></div>
+                    <p>fire</p>
+                </div>
+                <div class="typeTag flyingBg">
+                    <div class="flying"></div>
+                    <p>flying</p>
+                </div>
+                <div class="typeTag iceBg">
+                    <div class="ice"></div>
+                    <p>ice</p>
+                </div>
+                <div class="typeTag psychicBg">
+                    <div class="psychic"></div>
+                    <p>psychic</p>
+                </div>
+            </div>
+        </div>
+
     </main>
+
+    <script src="js/form-prevent-default.js"></script>
+    <script src="js/src-bar.js"></script>
+    <script src="js/src-bar-appearance.js"></script>
+    <!-- <script src="js/request-fetch.js"></script> -->
+    <script src="js/add-tumb.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/infinite-scroll.js"></script>
+    <script src="js/add-preview.js"></script>
+    <script src="js/clean-preview.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/clean-src.js"></script>
+
 </body>
 
 </html>

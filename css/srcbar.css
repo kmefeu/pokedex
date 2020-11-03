@@ -28,7 +28,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url('/pokedex/assets/svg/smallPokeballBg.svg');
-    pointer-events: all;
 }
 
 .roll {
