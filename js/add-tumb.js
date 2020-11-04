@@ -1,10 +1,8 @@
 function addPoke(id, name, types) {
 
-    //let tagsRow = pokeTypes(types);
     let urlImg = pokeImgSrc(id);
-
     let li = `
-    <li class="pokeTumb ${types[0].type.name}BgTumb">
+    <li class="pokeTumb ${types[0].type.name}BgTumb" onclick=windowSet("info.html?id="+${id})>
     <div class="pokeInfo">
     
         <div>
@@ -12,7 +10,7 @@ function addPoke(id, name, types) {
             <div class="dots"></div>
         </div>
 
-        <p class="pokeName">${name}</p>
+        <p class="pokeName">${name.replace(/-/gm, " ")}</p>
                   
         <div class="tagsRow">   
         ${pokeTypes(types)}

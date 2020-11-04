@@ -14,9 +14,9 @@ async function detectPokes() {
             return response.json()
         })
         .then(data => {
-           //console.log(data)
+            //console.log(data)
             detectedPokes = data.results;
-           // console.log(detectedPokes)
+            // console.log(detectedPokes)
             return detectedPokes; // precisa do return ?
         })
 };
@@ -32,12 +32,16 @@ async function initialLoad() {
 // ASK MORE POKEMONS DETAILS FOR INFINITE SCROLL
 
 async function loadMore() {
-   
-    let target = indicator + morLoad;
-    
-   for (indicator; indicator < target ; indicator++) {
-        await pokeInfo(detectedPokes[indicator].url)
+
+    let target = indicator + morLoad; // o problema esta aqui!
+    console.log("indicator = " + indicator)
+    console.log("target = " + target)
+
+    for (indicator; indicator < target; indicator++) {
+         await pokeInfo(detectedPokes[indicator].url)
     }
+    console.log("indicatorEND = " + indicator)
+    await loadPoke();
 }
 
 //GET POKEMON DETAILS AND STORE IN CAUGHT POKES
@@ -56,16 +60,16 @@ async function pokeInfo(pokeToLoadUrl) {
 
 // ASK TO addPoke() TO RENDER ON SCREAM CAUGHTPOKES 
 
-function loadPoke() {
+async function loadPoke() {
 
     let loadBase
 
-    if (indicator != iniLoad){ loadBase = indicator - morLoad } 
+    if (indicator != iniLoad) { loadBase = indicator - morLoad }
     else { loadBase = indicator - iniLoad }
 
     for (loadBase; loadBase < indicator; loadBase++) {
 
-        addPoke(caughtPokes[loadBase].id, caughtPokes[loadBase].name, caughtPokes[loadBase].types);
+        await addPoke(caughtPokes[loadBase].id, caughtPokes[loadBase].name, caughtPokes[loadBase].types);
     };
     document.querySelector(".pokeball").classList.remove("roll")
     document.querySelector("#srcPoke").value = "";

@@ -8,7 +8,7 @@ srcPoke.addEventListener("input", function () {
 
     if (this.value.length > 0) {
 
-        // search on loaded page
+        // SEARCH ON LOADED PAGE
 
         for (let i = 0; i < pokemons.length; i++) {
 
@@ -26,7 +26,7 @@ srcPoke.addEventListener("input", function () {
             }
         }
 
-        // search on detected pokemons
+        // SEARCH ON DETECTED POKEMONS
 
         for (let i = 0; i < detectedPokes.length; i++) {
 

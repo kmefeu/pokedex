@@ -2,7 +2,7 @@ var input = document.querySelector("#srcPoke");
 var output = document.querySelector(".srcBg");
 var output2 = document.querySelector(".srcBar input");
 
-// TROCAR DE COR PARA VERMLHO QUANDO EM FOCO
+// RED BG ON FOCUS
 
 input.addEventListener("focus", () => {
     output.style.backgroundColor = "var(--red)";
@@ -16,7 +16,7 @@ input.addEventListener("focusout", () => {
 
 });
 
-// TIRA RADIOS DO CANTO ESQUERTO
+// CORNER RADIUS FIX
 
 input.addEventListener("input", () => {
 
