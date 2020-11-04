@@ -78,7 +78,8 @@
 }
 
 .pokeTumb:hover .pokeShadow {
-    opacity: 0.80;
+    
+    opacity: 0.8;
     transform: translate(30px, -80px) scale(0.8);
 }
 
@@ -98,5 +99,6 @@
     background-size:80% ;
     background-image: url('/pokedex/assets/svg/pokeballBg.svg');
     background-repeat: no-repeat;
-    background-position: center right -40px;
+    background-position: center right -65px;
+    opacity: 0.3;
 }

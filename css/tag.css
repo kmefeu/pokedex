@@ -24,7 +24,7 @@
 .typeTag div {
     width: var(--sizeTag);
     height: var(--sizeTag);
-    margin-right: 10px;
+    margin-right: 5px;
     background-size: 100%;
 }
 

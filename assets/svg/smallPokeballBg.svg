@@ -1,10 +1,14 @@
-<svg class="pokeball" width="76" height="77" viewBox="0 0 76 77" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M24.792 42.3696H0C1.2972 61.7092 17.6251 77 37.5767 77C57.5283 77 73.8562 61.7092 75.1534 42.3696H50.8287C49.5415 48.2227 44.2019 52.611 37.8104 52.611C31.4188 52.611 26.0792 48.2227 24.792 42.3696Z"
-                            fill="#F0F0F0" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M50.3613 35.3514L75.1534 35.3514C73.8562 16.0118 57.5283 0.720927 37.5767 0.720925C17.6251 0.720923 1.2972 16.0118 0 35.3514L24.3247 35.3514C25.6118 29.4983 30.9515 25.1099 37.343 25.1099C43.7345 25.1099 49.0742 29.4983 50.3613 35.3514Z"
-                            fill="#F0F0F0" />
-                        <ellipse cx="37.3451" cy="38.6462" rx="7.08889" ry="6.98643" fill="#F0F0F0" />
-                    </svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 75 75" style="enable-background:new 0 0 75 75;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<g>
+	<circle class="st0" cx="37.5" cy="37.5" r="7"/>
+	<path class="st0" d="M37.5,23.5c6.4,0,11.8,4.2,13.5,10h24C73,14.7,57,0,37.5,0S2,14.7,0,33.5h24C25.7,27.7,31.1,23.5,37.5,23.5z"
+		/>
+	<path class="st0" d="M51,41.5c-1.7,5.8-7.1,10-13.5,10s-11.8-4.2-13.5-10H0C2,60.3,18,75,37.5,75S73,60.3,75,41.5H51z"/>
+</g>
+</svg>
