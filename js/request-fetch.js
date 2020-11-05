@@ -36,12 +36,13 @@ async function loadMore() {
     let target = indicator + morLoad; // o problema esta aqui!
     console.log("indicator = " + indicator)
     console.log("target = " + target)
+        
+        for (indicator; indicator < target; indicator++) {
+            await pokeInfo(detectedPokes[indicator].url)
+        }
 
-    for (indicator; indicator < target; indicator++) {
-         await pokeInfo(detectedPokes[indicator].url)
-    }
-    console.log("indicatorEND = " + indicator)
-    await loadPoke();
+        console.log("indicatorEND = " + indicator)
+        await loadPoke();
 }
 
 //GET POKEMON DETAILS AND STORE IN CAUGHT POKES

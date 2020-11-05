@@ -1,11 +1,17 @@
-body{
+body {
   overflow: hidden;
 }
 
 main {
   display: flex;
   margin: 0px;
- 
+}
+
+#srcPoke {
+
+  width: 100px;
+  padding: 0px;
+
 }
 
 .srcBar {
@@ -44,9 +50,10 @@ main {
 }
 
 .pokeName {
+  max-width: 200px;
   font-style: normal;
   font-weight: bold;
-  font-size: 124px;
+  font-size: 9rem;
   line-height: 145px;
   letter-spacing: -0.25;
   -webkit-text-fill-color: transparent;

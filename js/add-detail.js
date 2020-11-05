@@ -27,7 +27,7 @@ function addDetail(id, name, types, flaivorText, species, height, weight) {
         
         <div class="specContainer">
             <p class="textFlaivor">
-            ${(flaivorText).replace(/[\r\n]|+/gm, "")}
+            ${(flaivorText).replace(/[\r\n]|+/gm, " ")}
             </p>
             <div class="line"></div>
             <ul class="spec">

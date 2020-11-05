@@ -44,6 +44,7 @@
 }
 
 .pokeName {
+    max-width: 330px;
     font-size: 58px;
     color: var(--white);
     font-weight: bold;
