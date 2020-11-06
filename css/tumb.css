@@ -35,6 +35,7 @@
 
 .pokeInfo div {
     display: flex;
+    position: relative;
 }
 
 .pokeId {
@@ -50,6 +51,7 @@
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: capitalize;
+    display: inline;
 }
 
 .pokeImage {
@@ -85,17 +87,18 @@
 }
 
 .dots {
+    position: absolute;
     width: 182px;
-    height: 50px;
+    height: 50px;  
     margin-top: -20px;
-    margin-left: 50px;
+    margin-left: 10px;
     background: url('/pokedex/assets/svg/dots.svg') no-repeat;
 }
 
 .pokeballBg {
     height: 240px;
     width: 340px;
-    margin: -231px auto 0 -10px;
+    margin: -232px auto 0 -10px;
     border-radius: 18px;
     background-size:80% ;
     background-image: url('/pokedex/assets/svg/pokeballBg.svg');

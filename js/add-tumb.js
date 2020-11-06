@@ -10,7 +10,7 @@ function addPoke(id, name, types) {
             <div class="dots"></div>
         </div>
 
-        <p class="pokeName">${name.replace(/-/gm, " ")}</p>
+        <p class="pokeName" style="${typeResize(name)}">${(name.replace(/-/gm, " "))}</p>
                   
         <div class="tagsRow">   
         ${pokeTypes(types)}
@@ -27,9 +27,7 @@ function addPoke(id, name, types) {
     </div>
     </li>
         `
-
-
-    document.querySelector("ul").insertAdjacentHTML("beforeend", li);
+ document.querySelector("ul").insertAdjacentHTML("beforeend", li);
 
 }
 
@@ -45,11 +43,6 @@ function pokeImgSrc(id) {
     //https://www.serebii.net/swordshield/pokemon/893.png
     //https://images.wikidexcdn.net/mwuploads/wikidex/thumb/1/16/latest/20200229020020/Togedemaru.png/475px-Togedemaru.png
 
-    if (id > 721 && id < 894) {
-
-        urlImg = ("https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + id + ".png");// dinamic
-
-    }
 
     if (id > 10026 && id < 10033) {
 
@@ -74,7 +67,6 @@ function pokeImgSrc(id) {
     }
 
     return urlImg;
-
 }
 
 function pokeTypes(types) {
@@ -91,11 +83,9 @@ function pokeTypes(types) {
         <p>${typeName}</p>
         </div>`
 
-
         tagsRow.push(typeTag);
 
     });
-
 
     return tagsRow.join(['']);
 

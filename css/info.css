@@ -31,8 +31,6 @@ main {
   align-items: center;
   box-shadow: none;
   transition: none;
-  /* background-image: url('/pokedex/assets/svg-icons-type/grass.svg');
-    background-size: 10%; */
 }
 
 .pokeTumb:hover {
@@ -52,20 +50,22 @@ main {
 }
 
 .pokeName {
-  max-width: 200px;
+  width: 100%;
   font-style: normal;
   font-weight: bold;
-  font-size: 9rem;
-  line-height: 145px;
+  font-size: 124px;
+  line-height: 1em;
   letter-spacing: -0.25;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--darkWhite);
   text-transform: uppercase;
+  display: inline;
+ 
 }
 
 .tagsRow {
-  margin-top: -25px;
+  margin-top: 0px;
 }
 
 .pokeImage {
@@ -96,6 +96,7 @@ main {
 .dots {
   width: 182px;
   height: 50px;
+  margin-top:0px;
   margin-left: 35%;
 }
 

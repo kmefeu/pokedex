@@ -21,7 +21,8 @@
 
 .srcPreview p {
   text-align: left;
-  margin: auto 0px;
+  vertical-align: middle;
+  margin:auto 0px;
 }
 
 .srcPreview:hover {

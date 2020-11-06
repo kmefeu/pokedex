@@ -7,7 +7,6 @@ function cleanPreview(){
 
         preview[i].remove();
 
-    }
-    
+    } 
 }
 

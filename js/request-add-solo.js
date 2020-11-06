@@ -1,10 +1,8 @@
 async function pokeInfoSolo(pokeToLoad) {
-
     return await fetch(pokeToLoad)
         .then(response => {
             return response.json()
         }).then(data => {
-            // console.log(data)
             return data;
         })
 }
@@ -12,7 +10,6 @@ async function pokeInfoSolo(pokeToLoad) {
 function addPokeSolo(id, name, types) {
 
     let urlImg = pokeImgSrc(id);
-    let publicName = name.replace(/-/gm, " ");
 
     let li = `
     <li class="pokeTumb ${types[0].type.name}BgTumb solo" onclick=windowSet("info.html?id="+${id})>
@@ -23,7 +20,7 @@ function addPokeSolo(id, name, types) {
             <div class="dots"></div>
         </div>
 
-        <p class="pokeName">${name.replace(/-/gm, " ")}</p>
+        <p class="pokeName" style="${typeResize(name)}">${(name.replace(/-/gm, " "))}</p>
                   
         <div class="tagsRow">   
         ${pokeTypes(types)}

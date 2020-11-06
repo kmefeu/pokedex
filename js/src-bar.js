@@ -8,12 +8,9 @@ input.onkeydown = async (event) => {
     if (event.key === "Enter") {
 
         document.querySelector(".pokeball").classList.add("roll")
-
         let src = await pokeInfoSolo("https://pokeapi.co/api/v2/pokemon/" + input.value)
         await addPokeSolo(src.id, src.name, src.types)
-
         cleanPreview();
-
         document.querySelector(".pokeball").classList.remove("roll");
     }
 }
@@ -21,12 +18,9 @@ input.onkeydown = async (event) => {
 async function previewSelected(pokeName) {
 
     document.querySelector(".pokeball").classList.add("roll")
-
     let src = await pokeInfoSolo("https://pokeapi.co/api/v2/pokemon/" + pokeName)
     await addPokeSolo(src.id, src.name, src.types)
-
     cleanPreview();
-
     document.querySelector(".pokeball").classList.remove("roll")
 };
 

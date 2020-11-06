@@ -7,7 +7,7 @@ function addDetail(id, name, types, flaivorText, species, height, weight) {
             <div class="pokeInfo">
 
                 <p class="pokeId">#${id}</p>
-                <p class="pokeName">${name.replace(/-/gm, " ")}</p>
+                <p class="pokeName" style="${typeResize2(name)}">${(name.replace(/-/gm, " "))}</p>
 
                 <div class="row">
                 <div class="tagsRow">${pokeTypes(types)}</div>
@@ -37,7 +37,6 @@ function addDetail(id, name, types, flaivorText, species, height, weight) {
             </ul>   
         </div>
 `
-
     document.querySelector("main").insertAdjacentHTML("beforeend", detailHtml);
 }
 
