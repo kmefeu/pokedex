@@ -1,8 +1,8 @@
-function addSrcPreview(name) {
+function addSrcPreview(id,name) {
     let previewHtml = ` 
-   <div class="srcPreview">
-   <p>${name}</p>
-   </div>
+   <a class="srcPreview" onclick=previewSelected("${name}")>
+   <p>#${id} ${name.replace(/-/gm, " ")}</p>
+   </a>
    `
    document.querySelector(".preview").insertAdjacentHTML("beforeend", previewHtml);
 }

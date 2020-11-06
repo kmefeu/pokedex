@@ -11,11 +11,13 @@ main {
 
   width: 100px;
   padding: 0px;
+  opacity:0;
+  pointer-events: none;
 
 }
 
 .srcBar {
-  left: 3%;
+  left: 25px;
 }
 
 .pokeTumb {
@@ -120,7 +122,7 @@ main {
   line-height: 46px;
   letter-spacing: 0.025em;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 160px;
 }
 
 .line {

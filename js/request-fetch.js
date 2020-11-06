@@ -1,10 +1,9 @@
-
 var detectedPokes = [];
 var caughtPokes = [];
 
+var loadCalls = 1;
 var indicator = 0;
-var iniLoad = 10;
-var morLoad = 10;
+var load = 10;
 
 // ASK ALL POKEMONS NAME AND URL FOR DETAILS
 
@@ -14,26 +13,27 @@ async function detectPokes() {
             return response.json()
         })
         .then(data => {
-            //console.log(data)
             detectedPokes = data.results;
-            // console.log(detectedPokes)
-            return detectedPokes; // precisa do return ?
+            return detectedPokes;
         })
 };
 
 // ASK INITIAL POKEMONS DETAILS 
 
 async function initialLoad() {
-    for (indicator = 0; indicator < iniLoad; indicator++) {
+    for (indicator = 0; indicator < load; indicator++) {
         await pokeInfo(detectedPokes[indicator].url)
     }
+    console.log("indicator INICIAL = " + indicator)
 }
 
 // ASK MORE POKEMONS DETAILS FOR INFINITE SCROLL
 
 async function loadMore() {
 
-    let target = indicator + morLoad; // o problema esta aqui!
+    indicator = (loadCalls-1)*load;
+    let target = loadCalls*load;
+    console.log("tCalls = " + loadCalls)
     console.log("indicator = " + indicator)
     console.log("target = " + target)
         
@@ -42,7 +42,7 @@ async function loadMore() {
         }
 
         console.log("indicatorEND = " + indicator)
-        await loadPoke();
+        
 }
 
 //GET POKEMON DETAILS AND STORE IN CAUGHT POKES
@@ -63,10 +63,7 @@ async function pokeInfo(pokeToLoadUrl) {
 
 async function loadPoke() {
 
-    let loadBase
-
-    if (indicator != iniLoad) { loadBase = indicator - morLoad }
-    else { loadBase = indicator - iniLoad }
+    let loadBase = ((loadCalls-1)*load);
 
     for (loadBase; loadBase < indicator; loadBase++) {
 

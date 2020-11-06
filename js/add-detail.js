@@ -7,7 +7,7 @@ function addDetail(id, name, types, flaivorText, species, height, weight) {
             <div class="pokeInfo">
 
                 <p class="pokeId">#${id}</p>
-                <p class="pokeName">${name}</p>
+                <p class="pokeName">${name.replace(/-/gm, " ")}</p>
 
                 <div class="row">
                 <div class="tagsRow">${pokeTypes(types)}</div>
@@ -34,28 +34,7 @@ function addDetail(id, name, types, flaivorText, species, height, weight) {
                 <li><b>species:</b> ${species}</li>
                 <li><b>height:</b> ${height}m</li>
                 <li><b>weight:</b> ${weight}kg</li>
-                <li><b>abilities:</b>1. Overgrow</li>
-
-                <li><b>weaknesses:</b></li>
-            </ul>
-            <div class="tagsRow">
-                <div class="typeTag fireBg">
-                    <div class="fire"></div>
-                    <p>fire</p>
-                </div>
-                <div class="typeTag flyingBg">
-                    <div class="flying"></div>
-                    <p>flying</p>
-                </div>
-                <div class="typeTag iceBg">
-                    <div class="ice"></div>
-                    <p>ice</p>
-                </div>
-                <div class="typeTag psychicBg">
-                    <div class="psychic"></div>
-                    <p>psychic</p>
-                </div>
-            </div>
+            </ul>   
         </div>
 `
 

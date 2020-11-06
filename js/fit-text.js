@@ -1,1 +1,0 @@
-fitty(document.querySelector(".pokeName"));

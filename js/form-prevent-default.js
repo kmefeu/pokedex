@@ -1,8 +1,6 @@
 // EVITAR ENVIO PADRAO DO FORM
 
-var submit = document.querySelector('form');
-
-submit.onkeydown = (event) => {
+ document.querySelector('form').onkeydown = (event) => {
     if (event.key === "Enter") { event.preventDefault(); }
 
 };

@@ -37,7 +37,7 @@ srcPoke.addEventListener("input", function () {
             let src = new RegExp(this.value, "i");
 
             if (src.test(dtName) || src.test(dtId)) {
-                addSrcPreview(dtName);
+                addSrcPreview(dtId,dtName);
             }
         }
 

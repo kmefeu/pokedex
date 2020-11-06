@@ -20,9 +20,9 @@ function addPoke(id, name, types) {
     
      <div class="pokeImage">
         
-        <img class="sprites" src=${urlImg}>
+        <img class="sprites" src=${urlImg} alt="/pokedex/assets/img/how-is-that-pokemon.png">
         <div class="pokeballBg"></div>
-        <img class="pokeShadow" src=${urlImg}>
+        <img class="pokeShadow" src=${urlImg} alt="/pokedex/assets/img/how-is-that-pokemon.png">
 
     </div>
     </li>
@@ -40,10 +40,14 @@ function pokeImgSrc(id) {
 
     //[722-893,10027-10032,10061,10080-10085,10091-10157] missing default img
     //[10091-10157] no img in api
+    //890 892
+    //https://assets.pokemon.com/assets/cms2/img/pokedex/full/009_f3.png
+    //https://www.serebii.net/swordshield/pokemon/893.png
+    //https://images.wikidexcdn.net/mwuploads/wikidex/thumb/1/16/latest/20200229020020/Togedemaru.png/475px-Togedemaru.png
 
     if (id > 721 && id < 894) {
 
-        urlImg = ("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png");// dinamic
+        urlImg = ("https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + id + ".png");// dinamic
 
     }
 
@@ -65,7 +69,7 @@ function pokeImgSrc(id) {
     }
     if (id > 10090 && id < 10158) {
 
-        urlImg = ("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png");// dinamic
+        urlImg = ("/pokedex/assets/img/how-is-that-pokemon.png");// dinamic
 
     }
 
