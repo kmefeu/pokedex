@@ -2,11 +2,15 @@ var srcPoke = document.querySelector("#srcPoke");
 
 srcPoke.addEventListener("input", function () {
 
-    cleanPreview();
+    clean(".solo")
+    clean(".srcPreview")
     
     var pokemons = document.querySelectorAll(".pokeTumb");
 
     if (this.value.length > 0) {
+
+        document.querySelector(".srcBg").style.borderBottomRightRadius = "0px";
+        document.querySelector(".srcBar input").style.borderBottomRightRadius = "0px";
 
         // SEARCH ON LOADED PAGE
 
@@ -43,6 +47,9 @@ srcPoke.addEventListener("input", function () {
 
     }
     else {
+
+        document.querySelector(".srcBg").style.borderBottomRightRadius = "24px";
+        document.querySelector(".srcBar input").style.borderBottomRightRadius = "24px";
 
         for (let i = 0; i < pokemons.length; i++) {
             let pokemon = pokemons[i];

@@ -1,8 +1,11 @@
-function addPoke(id, name, types) {
+function addPoke(id, name, types, solo) {
+
+    if (solo == false) { solo = "" }
+    else { solo = " solo" }
 
     let urlImg = pokeImgSrc(id);
     let li = `
-    <li class="pokeTumb ${types[0].type.name}BgTumb" onclick=windowSet("info.html?id="+${id})>
+    <li class="pokeTumb ${types[0].type.name}BgTumb${solo}" onclick=windowSet("info.html?id="+${id})>
     <div class="pokeInfo">
     
         <div>
@@ -27,7 +30,7 @@ function addPoke(id, name, types) {
     </div>
     </li>
         `
- document.querySelector("ul").insertAdjacentHTML("beforeend", li);
+    document.querySelector("ul").insertAdjacentHTML("beforeend", li);
 
 }
 
