@@ -5,7 +5,7 @@ function addPoke(id, name, types, solo) {
 
     let urlImg = pokeImgSrc(id);
     let li = `
-    <li class="pokeTumb ${types[0].type.name}BgTumb${solo}" onclick=windowSet("info.html?id="+${id})>
+    <li class="pokeTumb ${types[0].type.name}BgTumb${solo}" onclick=windowSet("info.html?id="+${id}) value="77">
     <div class="pokeInfo">
     
         <div>

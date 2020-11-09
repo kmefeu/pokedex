@@ -1,14 +1,24 @@
 
-//  let audio = document.querySelector('#Aplayer')
-// // audio.setAttribute('src', "/../assets/audio/pop.mp3");
+// let audio = document.querySelector('#aPlayer')
+// audio.setAttribute('src', "assets/audio/pop.mp3");
 
-// document.querySelectorAll(".pokeTumb").addEventListener("mouseover", function () {
+// // var flag = 1
 
-//     audio.currentTime = 0;
-//     audio.play();
-//     // setTimeout(function () {
-//     //     audio.pause();
-//     // }, 1500);
+// document.querySelector("#infinite-list")
+//     .addEventListener("mouseover", function (event) {
+
+        
+//         event.target.addEventListener("mouseover", function () {
+
+//             console.log(event.target.value)
+
+//             if (event.target.value == 77 && flag ==1) {
+                
+//                 audio.currentTime = 0;
+//                 audio.play();
+//             }
 
 
-// })
+//         });
+
+//     });
