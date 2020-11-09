@@ -1,0 +1,26 @@
+@media (max-width: 1200px) {
+    main {
+      flex-direction: column;
+    }
+    .pokeTumb {
+      width: 100%;
+    }
+    .pokeInfo {
+      width: 50%;
+      float: center;
+      margin: 0 auto;
+    }
+    .specContainer{
+      width: 100%;  
+    }
+    .pokeName{
+      font-size: 110px;
+      -webkit-text-stroke-width: 1px;
+    }
+    .textFlaivor{
+      margin-top: 10px;
+    }
+    .dots{
+        background-size: 60%;
+    }
+  }
