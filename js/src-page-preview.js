@@ -9,6 +9,8 @@ srcPoke.addEventListener("input", function () {
 
     if (this.value.length > 0) {
 
+        window.removeEventListener("scroll",infiniteScroll)
+
         document.querySelector(".srcBg").style.borderBottomRightRadius = "0px";
         document.querySelector(".srcBar input").style.borderBottomRightRadius = "0px";
 
@@ -48,6 +50,7 @@ srcPoke.addEventListener("input", function () {
     }
     else {
 
+        window.addEventListener("scroll",infiniteScroll)
         document.querySelector(".srcBg").style.borderBottomRightRadius = "24px";
         document.querySelector(".srcBar input").style.borderBottomRightRadius = "24px";
 

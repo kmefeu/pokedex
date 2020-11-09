@@ -7,19 +7,20 @@ function addDetail(id, name, types, flaivorText, species, height, weight) {
             <div class="pokeInfo">
 
                 <p class="pokeId">#${id}</p>
-                <p class="pokeName" style="${typeResize2(name)}">${(name.replace(/-/gm, " "))}</p>
 
                 <div class="row">
-                <div class="tagsRow">${pokeTypes(types)}</div>
+                <p class="pokeName" style="${typeResize2(name)}">${(name.replace(/-/gm, " "))}</p>
                 <div class="dots"></div>
                 </div>
+                
+                <div class="tagsRow">${pokeTypes(types)}</div>
 
             </div>
             
             <div class="pokeImage">
 
                 <img class="sprites" src="${urlImg}">
-                <img class="pokeShadowSpec" src="${urlImg}">
+                <img class="pokeShadow" src="${urlImg}">
 
             </div>
 

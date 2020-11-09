@@ -17,12 +17,12 @@ function typeResize2(name) {
 
     let size = "";
 
-    if (name.length > 9) { size = "font-size:105px" }
-    if (name.length > 10) { size = "font-size:110px" }
-    if (name.length > 11) { size = "font-size:100px" }
-    if (name.length > 12) { size = "font-size:90px" }
-    if (name.length > 13) { size = "font-size:80px" }
-    if (name.length > 14) { size = "font-size:70px" }
+    if (name.length > 8) { size = "font-size:6.85vw" }
+    if (name.length > 10) { size = "font-size:6.75vw" }
+    if (name.length > 11) { size = "font-size:6.65vw" }
+    if (name.length > 12) { size = "font-size:6.5vw" }
+    if (name.length > 13) { size = "font-size:6vw" }
+    if (name.length > 14) { size = "font-size:5.5vw" }
 
     return size
 }
