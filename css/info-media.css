@@ -77,6 +77,11 @@
 }
 
 @media (max-width: 480px) {
+  body{
+  
+    width: 100vw;
+  }
+  
   .pokeName {
     font-size: 60px;
     -webkit-text-stroke-width: 0.5px;
