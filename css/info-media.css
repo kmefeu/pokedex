@@ -1,4 +1,8 @@
 @media (max-width: 1200px) {
+  body {
+    overflow: initial;
+  }
+  
   main {
     flex-direction: column;
   }
@@ -16,7 +20,12 @@
     margin-top: 10px;
   }
   .dots {
-    background-size: 60%;
+    width: 120px;
+    height: 34px;
+    background-size: 100%;
+  }
+  .tagsRow {
+    margin-top: -34px;
   }
 }
 
@@ -33,11 +42,53 @@
   }
   .pokeImage {
     margin-top: 30px;
+    margin-bottom: -50px;
   }
   .typeTag {
     font-size: 16px;
     padding: 8px;
     height: 28px;
     margin: 2px;
+  }
+  .specContainer {
+    padding: 25px;
+  }
+  .textFlaivor {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .line {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .spec li {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+  .spec li b {
+    font-size: 22px;
+    line-height: 32px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pokeName {
+    -webkit-text-stroke-width: 0.4px;
+  }
+  .dots {
+    width: 91px;
+    height: 25px;
+    background-size: 100%;
+  }
+  .tagsRow {
+    margin-top: -25px;
+  }
+  .pokeShadow {
+    width: 250px;
+  }
+  .sprites {
+    height: 280px;
   }
 }
