@@ -51,8 +51,8 @@ srcPoke.addEventListener("input", function () {
     else {
 
         window.addEventListener("scroll",infiniteScroll)
-        document.querySelector(".srcBg").style.borderBottomRightRadius = "24px";
-        document.querySelector(".srcBar input").style.borderBottomRightRadius = "24px";
+        document.querySelector(".srcBg").style.borderBottomRightRadius = "var(--borderRadius)";
+        document.querySelector(".srcBar input").style.borderBottomRightRadius = "var(--borderRadius)";
 
         for (let i = 0; i < pokemons.length; i++) {
             let pokemon = pokemons[i];

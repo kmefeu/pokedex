@@ -9,7 +9,18 @@ function typeResize(name) {
     if (name.length > 13) { size = "font-size:36px" }
     if (name.length > 14) { size = "font-size:32px" }
 
-    return size
+    if (window.innerWidth <= 550){
+        
+        if (name.length >= 9) { size = "font-size:26px" }
+        if (name.length > 10) { size = "font-size:22px" }
+        if (name.length > 11) { size = "font-size:18px" }
+        if (name.length > 12) { size = "font-size:14px" }
+        if (name.length > 13) { size = "font-size:12px" }
+        if (name.length > 14) { size = "font-size:10px" }
+
+    }
+
+        return size
 }
 
 function typeResize2(name) {

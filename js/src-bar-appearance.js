@@ -4,7 +4,7 @@ document.querySelector("#srcPoke").addEventListener("focus", () => {
 
 document.querySelector("#srcPoke").addEventListener("focusout", () => {
     document.querySelector(".srcBg").style.backgroundColor = "var(--midGray)";
-    document.querySelector(".srcBar input").style.borderBottomRightRadius = "24px";
+    document.querySelector(".srcBar input").style.borderBottomRightRadius = "var(--borderRadius)";
     setTimeout(() => { clean(".srcPreview") }, 200);
 
 });

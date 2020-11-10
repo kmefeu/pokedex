@@ -10,6 +10,139 @@
         font-size: 26px;
     }
     .sprites {
-         margin-right: 45px;
+        margin-right: 45px;
+    }
+    .srcPreview {
+        width: 500px;
+    }
+}
+
+@media (max-width: 650px) {
+    :root {
+        --size1: 500px;
+        --sizeTag: 20px;
+        --borderRadius3: 6px;
+    }
+    .srcPreview {
+        width: 400px;
+        font-size: 22px;
+    }
+    .pokeballBg {
+        width: 250px;
+        background-position: center right -75px;
+    }
+    #srcPoke {
+        font-size: 22px;
+    }
+    .sprites {
+        height: 200px;
+        margin-right: 50px;
+        margin-top: -40px;
+    }
+    .pokeShadow {
+        width: 200px;
+        margin: 30px 0px auto auto;
+    }
+    .pokeballBg {
+        width: 260px;
+        background-position: center right -65px;
+        height: 200px;
+        margin: -207px auto 0 -10px;
+    }
+    .pokeTumb {
+        height: 200px;
+    }
+    .dots {
+        width: 100px;
+        height: 30px;
+        margin-top: -20px;
+        margin-left: 40px;
+        background-size: 100%;
+    }
+    .typeTag {
+        font-size: 16px;
+        padding: 8px;
+        height: 28px;
+        margin: 2px;
+    }
+}
+
+@media (max-width: 550px) {
+    :root {
+        --size1: 260px;
+        --sizeTag: 12px;
+        --borderRadius: 16px;
+        --borderRadius2: 12px;
+        --borderRadius3: 4px;
+    }
+    main {
+        margin-top: 80px;
+    }
+    .srcBar {
+        height: 50px;
+    }
+    .srcBg {
+        width: 50px;
+        height: 50px;
+    }
+    .srcBar input {
+        padding-left: 70px;
+    }
+    #srcPoke {
+        font-size: 11px;
+    }
+    .preview{
+        max-height: 78px;
+    }
+    .srcPreview {
+        width: 210px;
+        font-size: 11px;
+        margin-left: 50px;
+        height: 26px;
+        padding: 4px;
+    }
+    .pokeTumb {
+        height: 120px;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    .pokeInfo div {
+        /* margin-top: ; */
+    }
+    .pokeId {
+        font-size: 18px;
+    }
+    .pokeName {
+        font-size: 28px;
+        margin-bottom: 2px;
+    }
+    .sprites {
+        height: 126px;
+        margin: -20px auto 0 0px;
+    }
+    .pokeShadow {
+        width: 100px;
+        height: 20px;
+        margin: 50px auto auto -20px;
+    }
+    .dots {
+        width: 70px;
+        height: 20px;
+        margin-top: 0px;
+        margin-left: 10px;
+        background-size: 100%;
+    }
+    .pokeballBg {
+        height: 120px;
+        width: 260px;
+        background-position: center right -30px;
+        margin: -124px auto auto -130px;
+        background-size: 50%;
+    }
+    .typeTag {
+        font-size: 12px;
+        padding: 5px;
+        height: 20px;
+        margin: 2px;
     }
 }

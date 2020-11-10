@@ -4,7 +4,7 @@
     background-color: var(--grassBg);
     margin: 0 auto 45px;
     padding: 45px;
-    border-radius: 18px;
+    border-radius: var(--borderRadius2);
     display: flex;
     align-items: center;
     box-shadow: var(--shadow);
@@ -98,7 +98,7 @@
     height: 240px;
     width: 340px;
     margin: -232px auto 0 -10px;
-    border-radius: 18px;
+    border-radius: var(--borderRadius2);
     background-size:80% ;
     background-image: url('/pokedex/assets/svg/pokeballBg.svg');
     background-repeat: no-repeat;
