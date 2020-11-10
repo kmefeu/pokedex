@@ -13,6 +13,8 @@ async function previewSelected(pokeName) {
 
 async function customSrc (lookingFor) {
     document.querySelector(".pokeball").classList.add("roll")
+    lookingFor = lookingFor.toLowerCase()
+    lookingFor = lookingFor.replace(/ /gm, "-")
     let src = await pokeInfo("https://pokeapi.co/api/v2/pokemon/" + lookingFor, false)
     await addPoke(src.id, src.name, src.types, true)
     clean(".srcPreview");
