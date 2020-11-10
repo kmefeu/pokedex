@@ -34,6 +34,9 @@
     --sizeTag: 18px;
     --borderRadius3: 6px;
   }
+  .pokeName {
+    font-size: 80px;
+  }
   .pokeShadow {
     width: 300px;
   }
@@ -75,7 +78,8 @@
 
 @media (max-width: 480px) {
   .pokeName {
-    -webkit-text-stroke-width: 0.4px;
+    font-size: 60px;
+    -webkit-text-stroke-width: 0.5px;
   }
   .dots {
     width: 91px;
