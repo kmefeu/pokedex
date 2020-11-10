@@ -1,26 +1,43 @@
 @media (max-width: 1200px) {
-    main {
-      flex-direction: column;
-    }
-    .pokeTumb {
-      width: 100%;
-    }
-    .pokeInfo {
-      width: 50%;
-      float: center;
-      margin: 0 auto;
-    }
-    .specContainer{
-      width: 100%;  
-    }
-    .pokeName{
-      font-size: 110px;
-      -webkit-text-stroke-width: 1px;
-    }
-    .textFlaivor{
-      margin-top: 10px;
-    }
-    .dots{
-        background-size: 60%;
-    }
+  main {
+    flex-direction: column;
   }
+  .pokeTumb {
+    width: 100%;
+  }
+  .specContainer {
+    width: 100%;
+  }
+  .pokeName {
+    font-size: 110px;
+    -webkit-text-stroke-width: 1px;
+  }
+  .textFlaivor {
+    margin-top: 10px;
+  }
+  .dots {
+    background-size: 60%;
+  }
+}
+
+@media (max-width: 550px) {
+  :root {
+    --sizeTag: 18px;
+    --borderRadius3: 6px;
+  }
+  .pokeShadow {
+    width: 300px;
+  }
+  .sprites {
+    height: 320px;
+  }
+  .pokeImage {
+    margin-top: 30px;
+  }
+  .typeTag {
+    font-size: 16px;
+    padding: 8px;
+    height: 28px;
+    margin: 2px;
+  }
+}
