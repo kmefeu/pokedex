@@ -3,8 +3,9 @@ document.querySelector("#srcPoke").value = "";
 
 document.querySelector("#srcPoke").onkeydown = async (event) => {
     if (event.key === "Enter") {
-
+        
         document.querySelector("#playerName").innerHTML = "<b>Player: </b>" + document.querySelector("#srcPoke").value
+        secretFound(4)
     }
 }
 
@@ -28,3 +29,4 @@ function diploma() {
   }
 
 }
+
