@@ -14,11 +14,11 @@ function randomizeInteger(min, max) {
     return min + Math.floor((max - min) * Math.random());
 }
 
-function addSecretPoke(id, name, types, solo) {
+function addSecretPoke(id, name) {
 
     let urlImg = pokeImgSrc(id);
     let li = `
-    <li class="pokeTumb secretTumb">
+    <li class="pokeTumb secretTumb" onclick=pokeSound(${id})>
     <div class="pokeInfo">
     
         <div>
@@ -70,3 +70,9 @@ function secretFound(file) {
 }
 
 
+function pokeSound(id) {
+    console.log(id)
+    
+    audio.setAttribute('src', "/pokedex/assets/audio/pokesounds/"+(id-1)+".mp3")
+    audio.play();
+}
