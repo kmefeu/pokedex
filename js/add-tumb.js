@@ -1,11 +1,18 @@
-function addPoke(id, name, types, solo) {
+function addPoke(id, name, types, solo, secret = false) {
 
     if (solo == false) { solo = "" }
     else { solo = " solo" }
+    let shiny = randomizeInteger(1,100)
+    let shinyTittle = ""
+    let shinyStyle = ""
 
+    if( shiny == 77){
+        shinyTittle = "shiny "
+        shinyStyle ="filter:  hue-rotate(180deg);"
+    }
     let urlImg = pokeImgSrc(id);
     let li = `
-    <li class="pokeTumb ${types[0].type.name}BgTumb${solo}" onclick=windowSet("info.html?id="+${id}) value="77">
+    <li class="pokeTumb ${types[0].type.name}BgTumb${solo}" onclick=windowSet("info.html?id="+${id})>
     <div class="pokeInfo">
     
         <div>
@@ -13,7 +20,7 @@ function addPoke(id, name, types, solo) {
             <div class="dots"></div>
         </div>
 
-        <p class="pokeName" style="${typeResize(name)}">${(name.replace(/-/gm, " "))}</p>
+        <p class="pokeName" style="${typeResize(name+shinyTittle)}">${shinyTittle}${(name.replace(/-/gm, " "))}</p>
                   
         <div class="tagsRow">   
         ${pokeTypes(types)}
@@ -23,9 +30,9 @@ function addPoke(id, name, types, solo) {
     
      <div class="pokeImage">
         
-        <img class="sprites" src=${urlImg} alt="/pokedex/assets/img/how-is-that-pokemon.png">
+        <img class="sprites" style="${shinyStyle}" src=${urlImg} alt="assets/img/how-is-that-pokemon.png">
         <div class="pokeballBg"></div>
-        <img class="pokeShadow" src=${urlImg} alt="/pokedex/assets/img/how-is-that-pokemon.png">
+        <img class="pokeShadow" src=${urlImg} alt="assets/img/how-is-that-pokemon.png">
 
     </div>
     </li>

@@ -2,7 +2,7 @@
     width: var(--size1);
     height: 100px;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     margin: 0 auto;
 }
 
