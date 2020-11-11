@@ -4,5 +4,5 @@ async function infiniteScroll() {
     document.querySelector(".pokeball").classList.add("roll")
     document.querySelector("#srcPoke").value = "Loading...";  
     await loadMore()
-    
+    diploma()
   }}

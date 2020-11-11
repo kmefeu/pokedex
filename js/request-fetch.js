@@ -70,5 +70,3 @@ async function loadPoke() {
 detectPokes().then(async () => await loadMore())
 
    // detectPokes().then(async () => await loadMore()).then(() => loadPoke())
-
-
