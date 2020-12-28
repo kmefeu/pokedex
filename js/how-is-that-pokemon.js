@@ -66,6 +66,7 @@ function secretFound(file) {
     if(file == 2){audio.setAttribute('src', "assets/audio/who_is_that_pokemon.mp3");}
     if(file == 3){audio.setAttribute('src', "assets/audio/acabou.mp3");}
     if(file == 4){audio.setAttribute('src', "assets/audio/pokemon_red_blue_trap_remix.mp3");}
+    if(file == 5){audio.setAttribute('src', "assets/audio/pop.mp3");}
     
     audio.currentTime = 0;
     audio.play();

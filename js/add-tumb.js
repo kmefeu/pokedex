@@ -12,7 +12,7 @@ function addPoke(id, name, types, solo, secret = false) {
     }
     let urlImg = pokeImgSrc(id);
     let li = `
-    <li class="pokeTumb ${types[0].type.name}BgTumb${solo}" onclick=windowSet("info.html?id="+${id})>
+    <li class="pokeTumb ${types[0].type.name}BgTumb${solo}" onclick=windowSet("info.html?id="+${id}) onMouseEnter=secretFound(5)>
     <div class="pokeInfo">
     
         <div>
